@@ -1,0 +1,4 @@
+python vcs.py init
+vim example.txt
+python vcs.py snapshot
+python vcs.py revert
