@@ -1,1 +1,1 @@
-This is the repo for Devops experiements
+This repo is for Devops experiements
