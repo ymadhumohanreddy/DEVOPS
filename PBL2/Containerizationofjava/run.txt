@@ -1,0 +1,36 @@
+# Create a project directory
+mkdir java-docker-app && cd java-docker-app
+
+# Create a Java file
+touch Main.java
+
+# Open Main.java in a text editor (or use nano/vim)
+nano Main.java
+
+
+# Compile the Java file
+javac Main.java
+
+
+# Create a Dockerfile
+touch Dockerfile
+
+# Open Dockerfile in a text editor
+nano Dockerfile
+
+
+
+# Build the Docker image
+docker build -t my-java-app .
+# Run the container
+docker run --rm my-java-app
+
+
+# Login to DockerHub
+docker login
+
+# Tag the image
+docker tag my-java-app your-dockerhub-username/my-java-app
+
+# Push to DockerHub
+docker push your-dockerhub-username/my-java-app
